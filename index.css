@@ -2,9 +2,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -450px;
-    margin-left: -550px;
-    width: 300px;
-    height: 300px;
+    margin-top: -333px;
+    margin-left: -303px;
+    width: 607px;
+    height: 666px;
     background-color: white;
 }
+
+#customersCircle { transition: 1s; }
+#myCircle { transition: 1s; }
+
+a:hover #customersCircle { 
+	opacity: 0.5;
+ }
+ a:hover #myCircle { 
+	opacity: 0.5;
+ }
