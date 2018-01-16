@@ -1,0 +1,50 @@
+ECHO To install Chocolatey run the following command
+ECHO from cmd.exe => 
+ECHO @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+ECHO 
+ECHO From powershell => 
+ECHO iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+ECHO 
+
+
+
+ECHO Install tools...
+REM Developer tools
+choco install curl conemu poshgit gitextensions dotnetcore-sdk visualstudiocode -y
+
+REM Currently the checksum does not match for docker-for-windows, I installed it with the "ignorechecksum" switch
+REM choco install docker-for-windows --ignore-checksums -y
+
+REM System tools
+choco install googlechrome 7zip beyondcompare notepadplusplus slack server-jre -y
+
+REM Optional tools
+REM choco install evernote spotify balsamiqmockups3 lastpass putty virtualbox -y
+
+REM Eclipse, after installation:
+REM 1. Open Eclipse, goto Help->Eclipse Marketplace
+REM 2. Seach for WSO2 and install "WSO2 Developer Studio"
+REM
+REM Note! WSO2 Developer Studio
+choco install choco install eclipse -version 4.4.2
+
+choco install resharper
+
+choco install mssqlserver2014-sqllocaldb -y
+choco install sql2012.powershell -y
+
+choco install filezilla -y
+
+REM choco install mssqlservermanagementstudio2014express -y
+choco install sql-server-management-studio -y
+
+choco install python -y
+choco install pycharm-community -y
+
+pip install virtualenv
+pip install flask
+pip install pyinstaller (supports 3.6???)
+
+choco install innosetup
+
+
