@@ -47,4 +47,6 @@ pip install pyinstaller (supports 3.6???)
 
 choco install innosetup
 
+choco install ruby
+
 
