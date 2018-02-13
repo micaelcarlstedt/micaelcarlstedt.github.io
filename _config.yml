@@ -1,0 +1,45 @@
+url: https://micaelcarlstedt.github.io
+baseurl: 
+
+collections: 
+  - posts
+  - contracts
+  - menuitems
+  - services
+
+# Site settings
+title: Micael Carlstedt Consulting
+email: micael@carlstedt.com
+description: "Micael Carlstedt Consulting AB"
+
+# Company staff
+people:
+- name: Micael Carlstedt
+  pic: 1
+  position: CEO/Consultant
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/micael
+  - title: bitbucket 
+    url: http://bitbucket.org/micael
+  - title: github
+    url: http://github.com/micaelcarlstedt
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Repslagaregatan 8a
+  - line: 211 21, Malmö
+  - line: Sweden
+
+# Build settings
+markdown: kramdown
+permalink: pretty
