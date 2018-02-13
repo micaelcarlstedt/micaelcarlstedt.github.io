@@ -1,6 +1,12 @@
 url: https://micaelcarlstedt.github.io
 baseurl: 
 
+collections: 
+  - posts
+  - contracts
+  - menuitems
+  - services
+
 # Site settings
 title: Micael Carlstedt Consulting
 email: micael@carlstedt.com

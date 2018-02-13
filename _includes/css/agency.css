@@ -265,11 +265,33 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -98px;
+    margin-left: -260px; 
+    width: 520px;
+    height: 196px;
+    background-color: white;
+}
+
+#customersCircle { transition: 1s; }
+#myCircle { transition: 1s; }
+
+a:hover #customersCircle { 
+	opacity: 0.5;
+ }
+ a:hover #myCircle { 
+	opacity: 0.5;
+ }
+
+
 header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    /* background-image: url('{{ site.baseurl }}/img/header-bg.jpg'); */
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
