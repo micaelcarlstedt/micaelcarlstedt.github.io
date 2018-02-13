@@ -7,14 +7,12 @@
     {% include header.html %}
     
     {% for menuitem in site.menuitems %}
-      {% include {{ menuitem.include }}.html %}
+      {% include {{ menuitem.include }} %}
     {% endfor %}
 
-    {% comment %}
-    
-    {% include contracts.html %}
+    {% include footer.html %}
 
-    
+    {% comment %}
     <!-- {% include services.html %} -->
     <!-- {% include portfolio_grid.html %} -->
     <!-- {% include about.html %} -->

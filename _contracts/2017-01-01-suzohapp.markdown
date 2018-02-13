@@ -1,0 +1,17 @@
+---
+title: Suzohapp
+subtitle: Docker, Python
+layout: default
+startdate: 2017-01-01
+roughdate: 2017
+enddate: 2017-12-31
+logo: img/about/3.jpg
+img: roundicons.png
+thumbnail: roundicons-thumbnail.png
+alt: image-alt
+technologies: Docker, Python
+client: Start Bootstrap
+category: Web Development
+description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+
+---
