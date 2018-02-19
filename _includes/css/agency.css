@@ -172,12 +172,18 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, {{ site.data.template.color.primary-opacity}});
+    top: 0%;
+    left: 0%;
+    border: 30;
+    width: 150%;
+    height: 150%;
+
+    /* font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, {{ site.data.template.color.primary-opacity}}); */
 }
 
 .navbar-default .navbar-brand:hover,
@@ -257,7 +263,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: rgb(255, 255, 255);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
