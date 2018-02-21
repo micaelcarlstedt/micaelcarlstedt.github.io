@@ -1,4 +1,4 @@
-url: https://micaelcarlstedt.github.io
+url: http://micael.carlstedt.com
 baseurl: 
 
 collections: 
@@ -20,20 +20,33 @@ people:
   position: CEO/Consultant
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
+      url: https://twitter.com/micaelcarlstedt
+    - title: linkedin
+      url: https://www.linkedin.com/in/micaelcarlstedt
     - title: stack-overflow
       url: #
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  name: Micael Carlstedt
+  links:
+    - https://twitter.com/micaelcarlstedt
+    - https://github.com/micaelcarlstedt
+    - https://bitbucket.org/micael
+    - https://www.linkedin.com/in/micaelcarlstedt
+    - https://stackoverflow.com/story/micael
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social-networks:
+  - title: linkedin
+    url: https://www.linkedin.com/in/micaelcarlstedt
   - title: twitter
     url: https://twitter.com/micaelcarlstedt
   - title: bitbucket 
-    url: http://bitbucket.org/micael
+    url: https://bitbucket.org/micael
   - title: github
-    url: http://github.com/micaelcarlstedt
+    url: https://github.com/micaelcarlstedt
+  - title: stack-overflow
+    url: https://stackoverflow.com/story/micael
 
 # Postal address (add as many lines as necessary)
 address:
@@ -47,4 +60,5 @@ permalink: pretty
 
 
 plugins:
+  - jekyll-seo-tag
   - jekyll-email-protect # https://github.com/vwochnik/jekyll-email-protect
