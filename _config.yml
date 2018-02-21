@@ -10,6 +10,7 @@ collections:
 # Site settings
 title: Micael Carlstedt Consulting
 email: micael@carlstedt.com
+phone: +46722009494
 description: "Micael Carlstedt Consulting AB"
 
 # Company staff
@@ -43,3 +44,7 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+
+plugins:
+  - jekyll-email-protect # https://github.com/vwochnik/jekyll-email-protect
