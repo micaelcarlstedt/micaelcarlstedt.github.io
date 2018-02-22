@@ -306,9 +306,24 @@ header {
     -o-background-size: cover;
 }
 
+header .logo {
+    padding-top: 50px;
+    /* padding-bottom: 25px; */
+}
+
+header .contact {
+    padding-top: 25px;
+    /* padding-bottom: 25px; */
+}
+
+header .navbutton {
+    padding-top: 25px;
+}
+
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    /* margin-top: 100px; */
+    /* padding-top: 100px; */
+    /* padding-bottom: 50px; */
 }
 
 header .intro-text .intro-lead-in {
@@ -328,10 +343,28 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+
+@media screen and (max-width:600px) {
+    header .navbutton {
+        visibility: hidden;
+    }
+}
+@media(min-width:600px) {
+    
+    header .navbutton {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
 @media(min-width:768px) {
-    header .intro-text {
+    
+    header .navbutton {
         padding-top: 300px;
         padding-bottom: 200px;
+    }
+    header .intro-text {
+        /* padding-top: 300px; */
+        /* padding-bottom: 200px; */
     }
 
     header .intro-text .intro-lead-in {
