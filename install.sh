@@ -1,5 +1,10 @@
 #! /bin/sh -
 
+# edit boot
+# /etc/default/grub
+# set GRUB_CMDLINE_LINUX_DEFAULT="text"
+# run "sudo update-grub"
+
 sudo apt update
 
 #install git
@@ -8,12 +13,18 @@ sudo apt install git
 #install docker
 sudo apt install docker.io
 
+#install ssh-server
+sudo apt install openssh-server
+
+#Check status of ssh-server
+#sudo systemctl status sshd
+
 #install Kubernetes (k3s)
 curl -sLS https://get.k3sup.dev | sh
 sudo install k3sup /usr/local/bin/
 
 #setup Kubernetes single node
-k3sup install --local 
+#k3sup install --local 
 
 
 #install 1Password
