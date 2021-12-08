@@ -3,7 +3,9 @@
 # edit boot
 # /etc/default/grub
 # set GRUB_CMDLINE_LINUX_DEFAULT="text"
+# set GRUB_TERMINAL=console
 # run "sudo update-grub"
+# run "sudo systemctl set-default multi-user"
 
 sudo apt update
 
