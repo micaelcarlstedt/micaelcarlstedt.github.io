@@ -1,6 +1,21 @@
 <script>
-// Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function() {
+    // Theme toggle
+    var themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', function() {
+            var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+
+    // Mobile nav toggle
     var toggle = document.getElementById('navToggle');
     var links = document.getElementById('navLinks');
     if (toggle && links) {
@@ -17,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (target) {
                 e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                // Close mobile nav if open
                 if (links) links.classList.remove('active');
                 if (toggle) toggle.classList.remove('active');
             }

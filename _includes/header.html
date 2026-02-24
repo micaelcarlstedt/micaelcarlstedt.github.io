@@ -2,23 +2,32 @@
 <nav class="site-nav">
     <div class="nav-container">
         <a href="#page-top" class="nav-brand">Carlstedt Consulting</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
-        </ul>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa fa-moon-o theme-icon-dark"></i>
+                <i class="fa fa-sun-o theme-icon-light"></i>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
 <header class="hero" id="page-top">
     <div class="hero-content">
+        <div class="hero-logo">
+            {% include logo.svg %}
+        </div>
         <div class="hero-badge">25+ Years of Engineering Excellence</div>
         <h1>Engineering Leadership<br>for the Modern Era</h1>
         <p class="hero-subtitle">Architecture design, engineering best practices, agile coaching, and AI-driven innovation. I help organizations build software that scales, teams that deliver, and systems that endure.</p>
