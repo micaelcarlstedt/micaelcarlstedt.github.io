@@ -2,7 +2,7 @@ name: PR Preview
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, closed]
 
 permissions:
   contents: write
@@ -11,22 +11,24 @@ permissions:
 concurrency: preview-${{ github.ref }}
 
 jobs:
-  build-and-deploy:
+  build-and-preview:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Ruby
+        if: github.event.action != 'closed'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
 
       - name: Install Jekyll
+        if: github.event.action != 'closed'
         run: gem install jekyll jekyll-seo-tag
 
       - name: Build site with PR-specific baseurl
-        run: |
-          jekyll build --baseurl "/pr-preview/pr-${{ github.event.number }}"
+        if: github.event.action != 'closed'
+        run: jekyll build --baseurl "/pr-preview/pr-${{ github.event.number }}"
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
