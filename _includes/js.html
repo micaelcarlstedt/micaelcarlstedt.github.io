@@ -1,17 +1,53 @@
- <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Theme toggle
+    var themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', function() {
+            var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    // Mobile nav toggle
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (toggle && links) {
+        toggle.addEventListener('click', function() {
+            links.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    }
 
-    <!-- Plugin JavaScript -->
-    <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (links) links.classList.remove('active');
+                if (toggle) toggle.classList.remove('active');
+            }
+        });
+    });
 
-    <!-- Contact Form JavaScript -->
-    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+    // Navbar scroll effect
+    var nav = document.querySelector('.site-nav');
+    if (nav) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 80) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    }
+});
+</script>

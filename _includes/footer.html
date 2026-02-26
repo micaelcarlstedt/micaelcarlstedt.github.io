@@ -1,25 +1,19 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social-networks %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Carlstedt Consulting</span>
+                <p class="footer-tagline">Engineering Excellence. Architectural Rigour. AI Innovation.</p>
+            </div>
+            <div class="footer-social">
+                {% for network in site.social-networks %}
+                <a href="{{ network.url }}" aria-label="{{ network.title }}"><i class="fa fa-{{ network.title }}"></i></a>
+                {% endfor %}
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <span class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</span>
+            <span class="footer-location">Malmö, Sweden</span>
+        </div>
+    </div>
+</footer>

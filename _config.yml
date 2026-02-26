@@ -1,64 +1,50 @@
 url: http://micael.carlstedt.com
-baseurl: 
+baseurl:
 
-collections: 
+collections:
   - posts
   - contracts
   - menuitems
   - services
 
 # Site settings
-title: Micael Carlstedt Consulting
+title: Carlstedt Consulting
 email: micael@carlstedt.com
 phone: +46722009494
-description: "Micael Carlstedt Consulting AB"
+description: "Senior Software Engineering Consultant — 25+ Years of Experience in Architecture, Engineering Excellence & AI-Driven Innovation"
 
 # Company staff
 people:
 - name: Micael Carlstedt
   pic: 1
-  position: CEO/Consultant
+  position: Principal Consultant & Founder
+  bio: "With 25+ years in software engineering, I help organizations build resilient, scalable systems using proven architectural patterns and modern engineering practices. From SOLID principles to cloud-native architectures, from agile transformation to AI-powered workflows — I bring deep expertise and pragmatic solutions."
   social:
-    - title: twitter
-      url: https://twitter.com/micaelcarlstedt
     - title: linkedin
       url: https://www.linkedin.com/in/micaelcarlstedt
-    - title: stack-overflow
-      url: #
+    - title: github
+      url: https://github.com/micaelcarlstedt
 
 social:
   name: Micael Carlstedt
   links:
-    - https://twitter.com/micaelcarlstedt
     - https://github.com/micaelcarlstedt
-    - https://bitbucket.org/micael
     - https://www.linkedin.com/in/micaelcarlstedt
-    - https://stackoverflow.com/story/micael
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks
 social-networks:
   - title: linkedin
     url: https://www.linkedin.com/in/micaelcarlstedt
-  - title: twitter
-    url: https://twitter.com/micaelcarlstedt
-  - title: bitbucket 
-    url: https://bitbucket.org/micael
   - title: github
     url: https://github.com/micaelcarlstedt
-  - title: stack-overflow
-    url: https://stackoverflow.com/story/micael
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
-  - line: Repslagaregatan 8a
-  - line: 211 21, Malmö
-  - line: Sweden
+  - line: Malmö, Sweden
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-
 plugins:
   - jekyll-seo-tag
-  - jekyll-email-protect # https://github.com/vwochnik/jekyll-email-protect
